@@ -1,0 +1,26 @@
+//in the backend folder
+1.  py -3.12 -m venv venv or  py -3.11 -m venv venv
+
+2. venv\Scripts\activate
+
+3. python -m pip install --upgrade pip
+
+4. pip install -r requirements.txt
+
+//In the frontend folder
+1. npm install
+
+2. npm run dev
+
+
+//If any error occurs because of sckit learn Run this commands (In the backend folder only)
+1.  python -c "import sys; print('Python:', sys.executable); print('Prefix:', sys.prefix)"
+>> where.exe python
+>> where.exe uvicorn
+>> python -m pip show scikit-learn
+
+2. .\venv\Scripts\python.exe -c "import sys; print(sys.executable)"
+
+3. .\venv\Scripts\python.exe -c "from sklearn.preprocessing import LabelEncoder; print('scikit-learn OK')"
+
+4. .\venv\Scripts\python.exe -m uvicorn main:app --host 127.0.0.1 --port 8000 --reload

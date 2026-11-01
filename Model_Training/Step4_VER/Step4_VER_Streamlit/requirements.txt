@@ -1,0 +1,8 @@
+streamlit
+numpy
+librosa
+sounddevice
+soundfile
+tensorflow
+scikit-learn
+pickle-mixin
